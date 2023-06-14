@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    ---font-principal: 'Roboto', sans-serif;
+
+}
+.limite{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+          /*CABECALHO*/
+.cor_header{
+    background-color: rgb(22, 22, 22);
+
+}
+.cabecalho{
+    display: flex;
+    width: 100%;
+    padding: 1% 0 1% 0;
+
+}
+
+.cabecalho div{
+    width: 40%;
+}
+
+.cabecalho div img{
+    width: 35%;
+}
+
+.cabecalho div ul{
+    display: flex;
+    margin-top: 6%;
+}
+
+.cabecalho div ul li, a{
+    margin-right: 8%;
+    color: #e6e1e1;
+    text-decoration: none;
+    font-family: var(---font-principal);
+    cursor: pointer;
+    transition: ease-in-out 500ms;
+    font-weight: 600;
+}
+
+.cabecalho div ul li:hover{
+    color: red;
+}
+
+.cabecalho div ul li a:hover{
+    color: red;
+}
+
+.header_m{
+    display: none;
+}
+
+.drop{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .cabecalho{
+        display: none;
+    }
+    .header_m{
+        display: block;
+        background-color: rgb(22, 22, 22);
+        width: 100%;
+    }
+    .header_m div{
+        display: flex;
+    }
+    .header_m article{
+        width: 50%;
+        display: flex;
+    }
+    .header_m article:nth-child(2){
+        align-items: center;
+        justify-content: end;
+        margin-right: 5%;
+    }
+    .header_m article img{
+        width: 60%;
+        margin: 5%;
+    }
+    .header_m article i{
+        color: #fff;
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+    .drop{
+        position: fixed;
+        background: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        right: -600px;
+        transition: ease-in-out 1s;
+    }
+    .drop_back{
+        right: 0 !important;
+        transition: ease-in-out 1s;
+    }
+    .drop nav ul{
+        margin-top: 30%;
+        text-align: center;
+    }
+    .drop nav ul a li{
+        font-size: 1.7rem;
+        margin-top: 10%;
+    }
+}
+
+      /*BANNER*/
+
+.banner{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.banner i{
+    align-self: center;
+    font-size: 3rem;
+    cursor: pointer;
+    margin: 5%;
+}
+
+.banner div h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5%;
+    font-family: var(---font-principal);
+    font-weight: 700;
+}
+
+.listra1{
+    padding: 1px;
+    background-color: rgb(97, 75, 75);  
+    border: none; 
+    margin-top: 8%;
+}
+
+@media(max-width:700px){
+    .banner i{
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+    .banner div h2{
+        font-size: 2rem;
+    }
+    .banner{
+        width: 100%;
+    }
+    
+    .banner div{
+        width: 100%;
+    }
+    
+    .banner div img{
+        width: 100%;
+    }
+}
+
+
+
+    /*Catalogo*/
+
+.catalogo{
+    /*Repetir 2x a coluna no tamanho de uma fração*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+    display: grid;
+    margin-top: 2%;
+    gap: 5%;
+}
+
+.text_catalogo h2{
+    font-family: var(---font-principal);
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 5%;
+    text-align: center;
+}
+
+.text_catalogo h3{
+    font-family: var(---font-principal);
+    font-weight: 600;
+    font-size: 2rem;
+    margin-left: 20%;
+    margin-bottom: 2%;
+}
+
+.catalogo div{
+    width: 100%;
+    gap: 2%;
+}
+
+.catalogo div img{
+    width: 80%;
+}
+
+@media(max-width:700px){
+    .catalogo{
+        gap: 2%;
+        margin-bottom: 77%;
+    }
+    .catalogo div{
+        margin-left: 10%;
+        width: 90%;
+    }
+    .text_catalogo h2{
+        font-size: 2rem;
+        margin-bottom: 3%;
+    }
+    .listra1{
+        z-index: 10;
+    }
+    .text_catalogo h3{
+        font-size: 1.7rem;
+    }
+}
+
+      /*Footer*/
+.cor_footer{
+    background-color: rgb(22, 22, 22);
+    margin-top: 5%;
+}
+
+.rodape{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rodape article{
+    width: 25%;
+    align-items: center;
+}
+
+.rodape article:nth-child(1) a img{
+    width: 70%;
+    margin: 5%;
+}
+.rodape article:nth-child(1) a img{
+    margin-top: 10%;
+}
+
+.rodape article:nth-child(2) a img{
+    width: 30%;
+    margin: 5%;
+}
+
+
+
+.rodape article p{
+    color: #e6e1e1;
+    margin-right: -4%;
+}
+
+.zap{
+    width: 5%;
+    position: fixed;
+    z-index: 10;
+    bottom: 5%;
+    right: 5%;
+}
+
+@media(max-width:700px){
+    .rodape article:nth-child(3){
+        display: none;
+    }
+    .rodape article{
+        width: 50%;
+        display: flex;
+        text-align: center;
+    }
+    .zap{
+        width: 15%;
+    }
+}
