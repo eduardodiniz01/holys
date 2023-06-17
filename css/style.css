@@ -204,7 +204,6 @@
 @media(max-width:700px){
     .catalogo{
         gap: 2%;
-        margin-bottom: 77%;
     }
     .catalogo div{
         margin-left: 10%;
@@ -273,7 +272,7 @@
     }
     .rodape article{
         width: 50%;
-        display: flex;
+        display: block      ;
         text-align: center;
     }
     .zap{

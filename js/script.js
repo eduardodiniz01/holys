@@ -6,7 +6,7 @@ var next = 0;
 function frente(){
     next ++;
     if(next < 7 ){
-    document.getElementById("shirt").src= `img/${next}.png`;
+    document.getElementById("shirt").src= `../img/${next}.png`;
     } else{
         next = 0
     }
@@ -15,7 +15,7 @@ function frente(){
     function tras(){
     next ++;
     if(next < 7 ){
-    document.getElementById("shirt").src= `img/${next}.png`;
+    document.getElementById("shirt").src= `../img/${next}.png`;
     } else{
         next = 0
     }
