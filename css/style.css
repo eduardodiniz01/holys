@@ -171,7 +171,7 @@
 .catalogo{
     /*Repetir 2x a coluna no tamanho de uma fração*/
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
-    display: grid;
+    display: column;
     margin-top: 2%;
     gap: 5%;
 }
